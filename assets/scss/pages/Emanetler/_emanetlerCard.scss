@@ -1,0 +1,92 @@
+.emanetlerCard{
+    padding-top: 5rem !important;
+
+  
+    .emanetlerCardCommon{
+        padding: 20px;
+        display: flex;
+        background-color: #F8FAFB;
+
+        .emanetlerCardCommonImg{
+            img{
+                max-width:100%;
+                max-height:auto;
+                border-radius: 10px;
+                object-fit: cover;
+                
+            
+            }
+        }
+
+
+        .emanetlerCardTextTop{
+            padding: 20px;
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: -0.5px;
+                color: #2e384d;
+            }
+
+            .bottomEmanetlerCardText{
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    display: flex;
+                    gap: 100px;
+
+                    li{
+                        p{
+                            font-size: 16px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.5;
+                            letter-spacing: normal;
+                            color: #708390;
+                            strong{
+                                margin-top: 5px;
+                                font-size: 20px;
+                                font-weight: bold;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.27;
+                                letter-spacing: normal;
+                                color: #2e384d;
+                            }
+                        }
+                    }
+                
+
+                }
+
+                a{
+                    margin-top: 7px;
+                    border-radius: 6px;
+                    border: solid 1px #e6ebed;
+                    padding: 15px 52px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    text-align: center;
+                    color: #708390;
+                    transition: all 0.5s;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #C4CCD1;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

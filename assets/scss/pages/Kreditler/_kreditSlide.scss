@@ -1,0 +1,113 @@
+.kreditSlide{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+    .kreditSlideSec{
+        background-color: #F8FAFB;
+
+        .carousel-indicators{
+            button{
+                background-color: black !important;
+            }
+        }
+        .kreditOwlSlider{
+            .kreditOwlSliderText{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-self: center;
+
+                h4{
+                    font-size: 40px;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    color: #2e384d;
+                    font-family: 'Roboto-Medium';
+                }
+
+                p{
+                    opacity: 0.6;
+                    font-size: 20px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.75;
+                    letter-spacing: normal;
+                    color: #15334a;
+                    margin-top: 12px;
+                    width: 70%;
+                }
+                a{
+                    text-decoration: none;
+                    padding: 15px 32px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    text-align: center;
+                    color: #ffffff;
+                    background-color: #2e384d;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 701px) {
+
+    .kreditOwlSlider{
+        display: flex;
+        flex-direction: column;
+
+        .kreditOwlSliderText{
+            h4{
+                font-size: 24px !important;
+            }
+            p{
+                font-size: 14px !important;
+            }
+        }
+
+        .kreditOwlSliderImg{
+            img{
+                width: 220px;
+                display: flex !important;
+                justify-content: center !important;
+                margin-top: 50px;
+            
+            }
+        }
+    }
+
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .kreditOwlSlider{
+        display: flex;
+        flex-direction: column;
+
+
+        .kreditOwlSliderImg{
+            img{
+                width: 100%;
+                max-height: 290px;
+                object-fit: contain;
+                margin-top: 50px;
+            
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,147 @@
+.kreditCard{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .creditCard{
+        .creditCardText{
+
+            .bottomText{
+                background-color: #F8FAFB !important;
+                p{
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: #708390;
+    
+                    strong{
+                        margin-top: 5px;
+                        font-size: 25.2px;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.27;
+                        letter-spacing: normal;
+                        color: #2e384d;
+                    }
+                }
+
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    display: flex;
+
+                    li{
+                        background-color: #6ebb20;
+                        border: 1px solid transparent;
+                        margin-right: 16px;
+                        margin-top: 7px;
+                        border-radius: 6px;
+                        border: solid 1px #e6ebed;
+                        padding: 15px 52px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.3px;
+                        text-align: center;
+                        color: #708390;
+                        transition: all 0.5s;
+                       
+                        &:nth-child(2){
+                            background-color: transparent !important;
+                            border: solid 1px #e6ebed;
+                            
+                            a{
+
+                                color: #708390 !important;
+
+                            }
+
+                            &:hover{
+                                background-color: #C4CCD1 !important;
+
+                                a{
+                                    color: white !important;
+                                }
+
+                            }
+                        }
+
+                        &:hover{
+                            background-color: rgb(46,56,77);
+                        }
+
+                        a{
+                            text-decoration: none;
+                            color: #ffffff !important;
+
+                        }
+                    }
+                }
+            }
+
+            .creditCardTitle{
+                h1{
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: -0.5px;
+                    color: #2e384d;
+                }
+            }
+        }
+    }
+    h1{
+        font-size: 26px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.85;
+        letter-spacing: normal;
+        color: #2e384d;
+        margin-bottom: 30px;
+    }
+
+    #topCard{
+        ul{
+            list-style: none;
+            display: flex;
+        
+            li{
+                margin-right: 15px;
+    
+                a{
+    
+                    padding: 8px 20px;
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: #708390;
+                    border-radius: 16px;
+                    border: solid 1px #e6ebed;
+                    transition: all 0.5s;
+                    text-transform: uppercase;
+                    display: flex;
+                    width: max-content;
+                    text-decoration: none;
+    
+                    &:hover{
+                        background-color: #6ebb20;
+                        color: #fff;
+                        border-color: #6ebb20;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

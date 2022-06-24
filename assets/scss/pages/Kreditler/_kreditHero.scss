@@ -1,0 +1,68 @@
+.kreditHero{
+    height: 250px;
+
+    .kreditCol{
+
+        .kreditHeroText{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+        }
+        h1{
+            font-size: 36px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: white;
+            max-width: 100%;
+        }
+    
+        p{
+            font-family: 'Roboto-Light';
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: white;
+            max-width: 524px;
+        }
+    
+        img{
+            width: 300px;
+            height: 266px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 901px) {
+    .kreditHero{
+        .kreditCol{
+            .kreditHeroText{
+                padding-top:80px;
+            }
+            h1{
+                font-size: 25px !important;
+            }
+            p{
+                font-size: 16px;
+            }
+            .kreditHeroImg{
+                display: none !important;
+            }
+        }
+    }
+
+
+}
+
+

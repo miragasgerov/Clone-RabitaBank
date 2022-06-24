@@ -1,0 +1,77 @@
+.hero{
+
+    .heroSlider{
+        height: 100%;
+
+        .carousel-indicators{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .textSlide{
+            margin-top: auto;
+
+            ul{
+                list-style-type: none;
+                padding: 0;
+
+                li{
+                    margin-top: 15px;
+                    margin-right:20px;
+                }
+
+                a{
+                    font-size: 16px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+                    text-align: center;
+                    color: #2e384d;
+                    margin-top: 25px;
+                    padding: 15px 33px;
+                    border-radius: 6px;
+                    background-color: #ffffff;
+                    transition: all 0.5s;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #E2F1D2;
+                    }
+                }
+            }
+            h3{
+                font-size: 40px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                color: #ffffff;
+                z-index: 100;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: normal;
+                color: #ffffff;
+                margin-top: 15px;
+            }
+        }
+        #carouselExampleIndicators{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        
+        #slide1{
+            background-image:radial-gradient(circle at 90% 0px, rgb(110, 187, 32), rgb(18, 148, 80));
+        }
+    
+       }
+    
+    }
+}

@@ -1,0 +1,133 @@
+.campaignsTabCard{
+    padding-top: 5rem;
+
+
+    .tab{
+        overflow: hidden;
+        .active{
+            background-color: rgb(110,187,32);
+            color: white;
+    
+        }
+        button{
+            width: max-content;
+            margin-right: 20px;
+            &:nth-child(1){
+                border: none;
+                border-radius: 50px;
+                background-color: transparent !important;
+
+                a{
+                    text-decoration: none;
+                    color: #708390;
+
+                    padding: 8px 20px;
+                    font-size: 10px;
+                    font-weight: bold;
+                    border-radius: 16px;
+                    border: solid 1px #e6ebed;
+                    transition: all 0.5s;
+                    text-transform: uppercase;
+                    display: flex;
+                    width: max-content;
+
+                    &:hover{
+                        background-color: rgb(110,187,32);
+                        color: white;
+    
+                    }
+                }
+            }
+
+            background-color: transparent;
+            border: none;
+            border-radius: 50px;
+
+            a{
+                text-decoration: none;
+                color: #708390;
+                padding: 8px 20px;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 16px;
+                border: solid 1px #e6ebed;
+                transition: all 0.5s;
+                text-transform: uppercase;
+                display: flex;
+                width: max-content;
+
+                &:hover{
+                    background-color: rgb(110,187,32);
+                    color: white;
+                }
+            }
+            
+
+        }
+    }
+
+    .tabcontent{
+        padding-top: 5rem;
+        display: none;
+
+        .allCampaigns{
+            min-height: 290px;
+            margin-bottom: 30px;
+            background-color: #f8fafb;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            
+
+            &:hover{
+                a{
+                    display: flex;
+
+                }
+            }
+
+            .allCampaignsText{
+                width: 50%;
+            }
+            a{
+                display: none;
+                margin-top: 80px;
+                background-color: #C4CCD1;
+                padding: 14px 52px;
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+                border-radius: 5px;
+                transition: all 0.5s;
+                text-transform: uppercase;
+                width: max-content;
+                text-decoration: none;
+    
+                &:hover{
+                    background-color: #15334A;
+                    color: #fff;
+                }
+            }
+            p{
+                font-size: 10px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: 0.67px;
+                color: #708390;
+
+                &:nth-child(2){
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.5;
+                    letter-spacing: -0.4px;
+                    color: #2e384d;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

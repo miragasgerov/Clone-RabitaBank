@@ -1,0 +1,87 @@
+.service{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .cardContent{
+        .card{
+            border: none;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+
+            &:hover{
+                background-color: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                transition: box-shadow 0.7s;
+            }
+        }
+
+        h5{
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: #2e384d;
+        }
+
+        p{
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: #adb6bf;        
+            strong{
+                font-size: 40px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.8;
+                letter-spacing: normal;
+                color: #2e384d;            
+            }
+        }
+
+        a{
+            width: 100%;
+            min-height: 48px;
+            height: 48px;
+            background-color: #6ebb20;
+            margin-top: 29px;
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #ffffff;
+            transition: all 0.5s;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .cardContent:nth-child(3){
+        padding-top: 20px;
+    }  
+}
+
+
+@media only screen and (max-width: 768px) {
+    .cardContent{
+        padding-top: 20px;
+    }  
+}
+

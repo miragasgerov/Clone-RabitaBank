@@ -1,0 +1,59 @@
+.onlineOrder{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .onlineOrderForm{
+        background-color: #F8FAFB;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        input,select{
+            height: 50px !important;
+        }
+
+        .buttonOrderOnline{
+            margin-top: 30px;
+        
+            button{
+                padding: 15px 0px !important;
+                background-color: #6ebb20;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch:normal;
+                line-height: normal;
+                letter-spacing: 0.3px;
+                text-align: center;
+                color: white;
+                transition: all 0.5s;
+                border-radius: 5px;
+                margin-top: 40px;
+                border: none;
+
+                &:hover{
+                    background-color: #2E384D;
+                }
+
+                
+            }
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .buttonOrderOnline{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .buttonOrderOnline{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}

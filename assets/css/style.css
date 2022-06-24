@@ -1,0 +1,1263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+}
+header .bottomNav::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #E6EBED;
+}
+header .leftMenu ul {
+  display: flex;
+  list-style-type: none;
+}
+header .leftMenu ul li {
+  position: relative;
+}
+header .leftMenu ul li:nth-child(1) {
+  font-size: 18px;
+  font-family: "Roboto-Bold";
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+}
+header .leftMenu ul li:nth-child(1) a {
+  font-weight: 700;
+  color: #2E384D !important;
+}
+header .leftMenu ul li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 48px;
+  transform: rotate(-60deg);
+  width: 15px;
+  height: 2px;
+  background-color: #B5BDC5;
+}
+header .leftMenu ul li:nth-child(2) {
+  font-size: 18px;
+  font-family: "Roboto-Bold";
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: #adb6bf !important;
+}
+header .leftMenu ul li a {
+  text-decoration: none;
+  color: #adb6bf;
+  font-weight: 700;
+}
+header .rightMenu {
+  display: flex;
+  align-items: center;
+}
+header .rightMenu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header .rightMenu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #15334a;
+}
+header .rightMenu ul li a img {
+  width: 50px;
+  height: 25px;
+}
+header .rightMenu i {
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+header .bottomNav {
+  z-index: 9999;
+}
+header .bottomNav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #15334a;
+  transition: color 0.5s;
+}
+header .bottomNav ul li a:hover {
+  color: #3A8649;
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    position: relative;
+  }
+
+  nav i {
+    position: absolute;
+    right: 120px;
+  }
+
+  .leftMenu {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
+
+  #bottomMenu {
+    position: absolute;
+    top: 100px;
+    left: 65px;
+  }
+
+  button {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+  }
+
+  .rightMenu {
+    position: absolute;
+    top: 80px;
+  }
+  .rightMenu ul {
+    display: inline-block !important;
+  }
+  .rightMenu ul li:nth-child(1) {
+    float: left;
+  }
+  .rightMenu ul li:nth-child(2) {
+    float: right;
+  }
+}
+.hero .heroSlider {
+  height: 100%;
+}
+.hero .heroSlider .carousel-indicators {
+  display: flex;
+  justify-content: flex-start;
+}
+.hero .heroSlider .textSlide {
+  margin-top: auto;
+}
+.hero .heroSlider .textSlide ul {
+  list-style-type: none;
+  padding: 0;
+}
+.hero .heroSlider .textSlide ul li {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.hero .heroSlider .textSlide ul a {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #2e384d;
+  margin-top: 25px;
+  padding: 15px 33px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.hero .heroSlider .textSlide ul a:hover {
+  background-color: #E2F1D2;
+}
+.hero .heroSlider .textSlide h3 {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+  z-index: 100;
+}
+.hero .heroSlider .textSlide p {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.hero .heroSlider #carouselExampleIndicators {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.hero .heroSlider #carouselExampleIndicators #slide1 {
+  background-image: radial-gradient(circle at 90% 0px, rgb(110, 187, 32), rgb(18, 148, 80));
+}
+
+.service {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.service .cardContent .card {
+  border: none;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+.service .cardContent .card:hover {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: box-shadow 0.7s;
+}
+.service .cardContent h5 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #2e384d;
+}
+.service .cardContent p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #adb6bf;
+}
+.service .cardContent p strong {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  color: #2e384d;
+}
+.service .cardContent a {
+  width: 100%;
+  min-height: 48px;
+  height: 48px;
+  background-color: #6ebb20;
+  margin-top: 29px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.5s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .cardContent:nth-child(3) {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardContent {
+    padding-top: 20px;
+  }
+}
+.rabiteCard {
+  padding-top: 5rem;
+}
+.rabiteCard .rabiteCardSec {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.rabiteCard .rabiteCardSec .totalCard {
+  width: 370px;
+  height: 344px;
+  background: #F8FAFB;
+}
+.rabiteCard .rabiteCardSec .totalCard:hover .rabiteCardImg img {
+  display: none !important;
+}
+.rabiteCard .rabiteCardSec .totalCard:hover .totalCard {
+  background: url(../../../img/Kartmane.jpg) center center !important;
+}
+.rabiteCard .rabiteCardSec .totalCard .rabiteCardImg {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.rabiteCard .rabiteCardSec .totalCard .rabiteCardImg img {
+  display: block;
+  width: 122px;
+}
+.rabiteCard .rabiteCardSec .totalCard .rabiteCardText p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #708390;
+  margin-top: 10px;
+}
+.rabiteCard .rabiteCardSec .totalCard .rabiteCardText .rabiteCardTitle {
+  padding: 5px 20px;
+  border-radius: 16px;
+  border: solid 1px #6ebb20;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.67px;
+  text-align: center;
+  color: #6ebb20;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-top: 0 !important;
+}
+.rabiteCard .rabiteCardSec .totalCard .rabiteCardText h4 {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #2e384d;
+  margin-top: 26px;
+}
+
+@media only screen and (max-width: 992px) {
+  .rabiteCardSec:nth-child(3) {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .rabiteCardSec {
+    padding-top: 20px;
+  }
+}
+.news {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.news h4 {
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: #2e384d;
+}
+.news a {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: right;
+  color: #6ebb20;
+  text-decoration: none;
+}
+.news .newsText ul {
+  list-style-type: none;
+  padding: 0;
+}
+.news .newsText ul li {
+  cursor: pointer;
+}
+.news .newsText ul li span {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #4aa949;
+}
+.news .newsText ul li h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #2e384d;
+  margin-top: 24px;
+}
+
+footer #socialMediaIconFooter {
+  padding-top: 2rem;
+}
+footer #socialMediaIconFooter p {
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #708390;
+}
+footer #socialMediaIconFooter ul {
+  list-style-type: none;
+  display: flex;
+}
+footer #socialMediaIconFooter ul li {
+  margin-right: 25px;
+}
+footer #socialMediaIconFooter ul li a i {
+  color: #708390;
+  font-size: 31px;
+}
+footer #socialMediaIconFooter ul li a i:hover {
+  color: rgb(21, 51, 74);
+}
+footer #footerImg {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid grey;
+}
+footer #lastH {
+  color: #98A5AF !important;
+}
+footer h6 {
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #B7C0C7;
+  cursor: pointer;
+}
+footer h6:hover {
+  color: #15334a !important;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 4px;
+}
+footer ul li a {
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  max-width: 176px;
+  color: #939393;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #15334a !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+}
+header .bottomNav::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #E6EBED;
+}
+header .leftMenu ul {
+  display: flex;
+  list-style-type: none;
+}
+header .leftMenu ul li {
+  position: relative;
+}
+header .leftMenu ul li:nth-child(1) {
+  font-size: 18px;
+  font-family: "Roboto-Bold";
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+}
+header .leftMenu ul li:nth-child(1) a {
+  font-weight: 700;
+  color: #2E384D !important;
+}
+header .leftMenu ul li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 48px;
+  transform: rotate(-60deg);
+  width: 15px;
+  height: 2px;
+  background-color: #B5BDC5;
+}
+header .leftMenu ul li:nth-child(2) {
+  font-size: 18px;
+  font-family: "Roboto-Bold";
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: #adb6bf !important;
+}
+header .leftMenu ul li a {
+  text-decoration: none;
+  color: #adb6bf;
+  font-weight: 700;
+}
+header .rightMenu {
+  display: flex;
+  align-items: center;
+}
+header .rightMenu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header .rightMenu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #15334a;
+}
+header .rightMenu ul li a img {
+  width: 50px;
+  height: 25px;
+}
+header .rightMenu i {
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+}
+header .bottomNav {
+  z-index: 9999;
+}
+header .bottomNav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #15334a;
+  transition: color 0.5s;
+}
+header .bottomNav ul li a:hover {
+  color: #3A8649;
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    position: relative;
+  }
+
+  nav i {
+    position: absolute;
+    right: 120px;
+  }
+
+  .leftMenu {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
+
+  #bottomMenu {
+    position: absolute;
+    top: 100px;
+    left: 65px;
+  }
+
+  button {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+  }
+
+  .rightMenu {
+    position: absolute;
+    top: 80px;
+  }
+  .rightMenu ul {
+    display: inline-block !important;
+  }
+  .rightMenu ul li:nth-child(1) {
+    float: left;
+  }
+  .rightMenu ul li:nth-child(2) {
+    float: right;
+  }
+}
+.kreditHero {
+  height: 250px;
+}
+.kreditHero .kreditCol .kreditHeroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.kreditHero .kreditCol h1 {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: white;
+  max-width: 100%;
+}
+.kreditHero .kreditCol p {
+  font-family: "Roboto-Light";
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: white;
+  max-width: 524px;
+}
+.kreditHero .kreditCol img {
+  width: 300px;
+  height: 266px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 901px) {
+  .kreditHero .kreditCol .kreditHeroText {
+    padding-top: 80px;
+  }
+  .kreditHero .kreditCol h1 {
+    font-size: 25px !important;
+  }
+  .kreditHero .kreditCol p {
+    font-size: 16px;
+  }
+  .kreditHero .kreditCol .kreditHeroImg {
+    display: none !important;
+  }
+}
+.kreditCard {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.kreditCard .creditCard .creditCardText .bottomText {
+  background-color: #F8FAFB !important;
+}
+.kreditCard .creditCard .creditCardText .bottomText p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #708390;
+}
+.kreditCard .creditCard .creditCardText .bottomText p strong {
+  margin-top: 5px;
+  font-size: 25.2px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #2e384d;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li {
+  background-color: #6ebb20;
+  border: 1px solid transparent;
+  margin-right: 16px;
+  margin-top: 7px;
+  border-radius: 6px;
+  border: solid 1px #e6ebed;
+  padding: 15px 52px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #708390;
+  transition: all 0.5s;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li:nth-child(2) {
+  background-color: transparent !important;
+  border: solid 1px #e6ebed;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li:nth-child(2) a {
+  color: #708390 !important;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li:nth-child(2):hover {
+  background-color: #C4CCD1 !important;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li:nth-child(2):hover a {
+  color: white !important;
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li:hover {
+  background-color: rgb(46, 56, 77);
+}
+.kreditCard .creditCard .creditCardText .bottomText ul li a {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+.kreditCard .creditCard .creditCardText .creditCardTitle h1 {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #2e384d;
+}
+.kreditCard h1 {
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: #2e384d;
+  margin-bottom: 30px;
+}
+.kreditCard #topCard ul {
+  list-style: none;
+  display: flex;
+}
+.kreditCard #topCard ul li {
+  margin-right: 15px;
+}
+.kreditCard #topCard ul li a {
+  padding: 8px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #708390;
+  border-radius: 16px;
+  border: solid 1px #e6ebed;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: flex;
+  width: max-content;
+  text-decoration: none;
+}
+.kreditCard #topCard ul li a:hover {
+  background-color: #6ebb20;
+  color: #fff;
+  border-color: #6ebb20;
+}
+
+.kreditSlide {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.kreditSlide .kreditSlideSec {
+  background-color: #F8FAFB;
+}
+.kreditSlide .kreditSlideSec .carousel-indicators button {
+  background-color: black !important;
+}
+.kreditSlide .kreditSlideSec .kreditOwlSlider .kreditOwlSliderText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+.kreditSlide .kreditSlideSec .kreditOwlSlider .kreditOwlSliderText h4 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #2e384d;
+  font-family: "Roboto-Medium";
+}
+.kreditSlide .kreditSlideSec .kreditOwlSlider .kreditOwlSliderText p {
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #15334a;
+  margin-top: 12px;
+  width: 70%;
+}
+.kreditSlide .kreditSlideSec .kreditOwlSlider .kreditOwlSliderText a {
+  text-decoration: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2e384d;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 701px) {
+  .kreditOwlSlider {
+    display: flex;
+    flex-direction: column;
+  }
+  .kreditOwlSlider .kreditOwlSliderText h4 {
+    font-size: 24px !important;
+  }
+  .kreditOwlSlider .kreditOwlSliderText p {
+    font-size: 14px !important;
+  }
+  .kreditOwlSlider .kreditOwlSliderImg img {
+    width: 220px;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .kreditOwlSlider {
+    display: flex;
+    flex-direction: column;
+  }
+  .kreditOwlSlider .kreditOwlSliderImg img {
+    width: 100%;
+    max-height: 290px;
+    object-fit: contain;
+    margin-top: 50px;
+  }
+}
+.kreditCol h1 {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: white;
+  max-width: 100%;
+}
+.kreditCol img {
+  width: 300px;
+  height: 266px;
+  object-fit: contain;
+}
+
+.emanetlerCard {
+  padding-top: 5rem !important;
+}
+.emanetlerCard .emanetlerCardCommon {
+  padding: 20px;
+  display: flex;
+  background-color: #F8FAFB;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardCommonImg img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop {
+  padding: 20px;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #2e384d;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop .bottomEmanetlerCardText ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 100px;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop .bottomEmanetlerCardText ul li p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #708390;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop .bottomEmanetlerCardText ul li p strong {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #2e384d;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop .bottomEmanetlerCardText a {
+  margin-top: 7px;
+  border-radius: 6px;
+  border: solid 1px #e6ebed;
+  padding: 15px 52px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #708390;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.emanetlerCard .emanetlerCardCommon .emanetlerCardTextTop .bottomEmanetlerCardText a:hover {
+  background-color: #C4CCD1;
+  color: white;
+}
+
+.onlineOrder {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.onlineOrder .onlineOrderForm {
+  background-color: #F8FAFB;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.onlineOrder .onlineOrderForm input, .onlineOrder .onlineOrderForm select {
+  height: 50px !important;
+}
+.onlineOrder .onlineOrderForm .buttonOrderOnline {
+  margin-top: 30px;
+}
+.onlineOrder .onlineOrderForm .buttonOrderOnline button {
+  padding: 15px 0px !important;
+  background-color: #6ebb20;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  border-radius: 5px;
+  margin-top: 40px;
+  border: none;
+}
+.onlineOrder .onlineOrderForm .buttonOrderOnline button:hover {
+  background-color: #2E384D;
+}
+
+@media only screen and (max-width: 992px) {
+  .buttonOrderOnline {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .buttonOrderOnline {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+.onlineServiceCard {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.onlineServiceCard .onlineServiceCardSec {
+  background-color: #F8FAFB;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.onlineServiceCard .onlineServiceCardSec .onlineServiceCardText h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #2e384d;
+}
+.onlineServiceCard .onlineServiceCardSec .onlineServiceCardText p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #708390;
+}
+.onlineServiceCard .onlineServiceCardSec .onlineServiceCardText a {
+  margin-top: 50px;
+  background-color: #C4CCD1;
+  padding: 14px 52px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: flex;
+  width: max-content;
+  text-decoration: none;
+}
+.onlineServiceCard .onlineServiceCardSec .onlineServiceCardText a:hover {
+  background-color: #15334A;
+  color: #fff;
+}
+.onlineServiceCard .onlineServiceCardSec .onlineServiceCardImg img {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .onlineServiceCardSec {
+    display: block !important;
+    position: relative;
+  }
+  .onlineServiceCardSec:nth-child(2) {
+    margin-top: 40px;
+  }
+  .onlineServiceCardSec .onlineServiceCardText a {
+    margin-top: 300px !important;
+    padding: 14px 180px !important;
+  }
+  .onlineServiceCardSec .onlineServiceCardImg {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+  .onlineServiceCardSec .onlineServiceCardImg img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .onlineServiceCardSec {
+    display: block !important;
+    position: relative;
+  }
+  .onlineServiceCardSec .onlineServiceCardText a {
+    margin-top: 300px !important;
+    padding: 14px 100px !important;
+  }
+  .onlineServiceCardSec .onlineServiceCardImg {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
+  .onlineServiceCardSec .onlineServiceCardImg img {
+    width: 400px;
+  }
+}
+.otherService {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.otherService .otherServiceCard {
+  min-height: 290px;
+  margin-bottom: 30px;
+  background-color: #f8fafb;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.otherService .otherServiceCard .otherServiceCardText p {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #2e384d;
+}
+.otherService .otherServiceCard .otherServiceCardText p:nth-child(2) {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #708390;
+}
+.otherService .otherServiceCard .otherServiceCardText a {
+  margin-top: 80px;
+  background-color: #C4CCD1;
+  padding: 14px 52px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: flex;
+  width: max-content;
+  text-decoration: none;
+}
+.otherService .otherServiceCard .otherServiceCardText a:hover {
+  background-color: #15334A;
+  color: #fff;
+}
+
+.campaignsTabCard {
+  padding-top: 5rem;
+}
+.campaignsTabCard .tab {
+  overflow: hidden;
+}
+.campaignsTabCard .tab .active {
+  background-color: rgb(110, 187, 32);
+  color: white;
+}
+.campaignsTabCard .tab button {
+  width: max-content;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+.campaignsTabCard .tab button:nth-child(1) {
+  border: none;
+  border-radius: 50px;
+  background-color: transparent !important;
+}
+.campaignsTabCard .tab button:nth-child(1) a {
+  text-decoration: none;
+  color: #708390;
+  padding: 8px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 16px;
+  border: solid 1px #e6ebed;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: flex;
+  width: max-content;
+}
+.campaignsTabCard .tab button:nth-child(1) a:hover {
+  background-color: rgb(110, 187, 32);
+  color: white;
+}
+.campaignsTabCard .tab button a {
+  text-decoration: none;
+  color: #708390;
+  padding: 8px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 16px;
+  border: solid 1px #e6ebed;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: flex;
+  width: max-content;
+}
+.campaignsTabCard .tab button a:hover {
+  background-color: rgb(110, 187, 32);
+  color: white;
+}
+.campaignsTabCard .tabcontent {
+  padding-top: 5rem;
+  display: none;
+}
+.campaignsTabCard .tabcontent .allCampaigns {
+  min-height: 290px;
+  margin-bottom: 30px;
+  background-color: #f8fafb;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.campaignsTabCard .tabcontent .allCampaigns:hover a {
+  display: flex;
+}
+.campaignsTabCard .tabcontent .allCampaigns .allCampaignsText {
+  width: 50%;
+}
+.campaignsTabCard .tabcontent .allCampaigns a {
+  display: none;
+  margin-top: 80px;
+  background-color: #C4CCD1;
+  padding: 14px 52px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  width: max-content;
+  text-decoration: none;
+}
+.campaignsTabCard .tabcontent .allCampaigns a:hover {
+  background-color: #15334A;
+  color: #fff;
+}
+.campaignsTabCard .tabcontent .allCampaigns p {
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.67px;
+  color: #708390;
+}
+.campaignsTabCard .tabcontent .allCampaigns p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  color: #2e384d;
+  margin-top: 30px;
+}/*# sourceMappingURL=style.css.map */
