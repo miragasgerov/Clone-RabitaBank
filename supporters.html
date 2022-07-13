@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="./assets/img/logo.svg">
+              </a>
+    
+    
+    
+    
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="leftMenu mt-3">
+                    <ul>
+                        <li><a href="#">Fərdi</a></li>
+                        <li class="ms-4"><a href="#">Biznes</a></li>
+                    </ul>
+                  </div>
+              </div>
+    
+              <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to Search">
+                <a class="search-btn" href="#">
+                  <i class="fas fa-search"></i>
+                </a>
+           </div>
+    
+    
+    
+    
+              <div class="rightMenu ms-4">
+                <ul class="navbar-nav">
+                    <li><a href="#">İnternet bankçılıq →</a></li>
+                    <li><a href="tel:133" class="call-now"><img src="./assets/img/133_header.png"></a></li>
+                </ul>
+              </div>
+    
+    
+    
+    
+            </div>
+            <hr>
+        </nav>
+    
+    
+    
+        <div class="bottomNav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                  <div class="collapse navbar-collapse bottomNavbar" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="bottomMenu">
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="kreditler.html">Kreditlər</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="emanetler.html">Əmanətlər</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Kartname</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="onlineService.html">Onlayn Xidmətlər</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="otherService.html">Digər xidmətlər</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="campaigns.html">Kampaniyalar</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="serviceNetwork.html">Xidmət Şəbəkəsi</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="supporters.html">Tərəfdaşlar</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Onlayn növbə</a>
+                      </li>
+                      
+                    </ul>
+    
+                  </div>
+                </div>
+              </nav>
+        </div>
+          
+    </header>
+
+    <main>
+        <section class="kreditHero mt-4" style="background-image: linear-gradient(275deg, #6ebb20, #129450)">
+            <div class="container">
+                <div class="row">
+                    <div class="kreditCol d-flex">
+                        <div class="kreditHeroText col-lg-7">
+                            <h1>Tərəfdaşlar</h1>
+                        </div>
+    
+                        <div class="kreditHeroImg col-lg-5 d-flex justify-content-center">
+                            <img src="./assets/img/slider terefdaaa.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="supportersTab">
+            <div class="container">
+                <div class="row">
+                    <h1>Kateqoriya seçin</h1>
+
+                    <div class="tab">
+                        <ul>
+                            <li class="tablinks active" onclick="openSupporters(event, 'All')" id="defaultOpen">HAMISI</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Electronics')">Elektronika</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Hospitals')">Xəstəxanalar</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Restaurants')">Restoranlar</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Shopping')">Alış-veriş</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Services')">Xidmətlər</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Education')">Təhsil</li>
+                            <li class="tablinks" onclick="openSupporters(event, 'Hotels')">Mehmanxanalar</li>
+                        </ul>
+                        
+                      </div>
+                      
+                      <div id="All" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Electronics" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Hospitals" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Restaurants" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Shopping" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Services" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Education" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div id="Hotels" class="tabcontent">
+                        <button class="accordion">Önə çıxanlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion">Bütün partnyorlar</button>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 xalca yuma.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Xalça Yuma</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 usta.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Usta xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 temizlik.png" width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Təmizlik xidməti</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="accordionCard">
+                                        <div class="accordionCardImg">
+                                            <img src="./assets/img/166 logistika.png"  width="200px" style="height:157px;">
+                                        </div>
+
+                                        <div class="accordionCardText">
+                                            <h3>166 Yükdaşıma və logistika</h3>
+                                            <p>3% Cashback bonus</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+                      
+                </div>
+            </div>
+        </section>
+
+        <section class="kreditSlide mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="kreditSlideSec">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="kreditOwlSlider d-flex">
+                                    <div class="col-lg-7 kreditOwlSliderText ">
+                                        <div class="container">
+                                            <h4>Rabita Mobile</h4>
+                                            <p>Rabita Mobile ilə banka getməyə ehtiyac yoxdur, bankınız hər zaman yanınızdadır!</p>
+                                    
+                                            <div class="kreditSlideButton mt-5">
+                                                <a href="#">Daha ətraflı</a>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    <div class="col-lg-5 kreditOwlSliderImg d-flex justify-content-end">
+                                        <img src="./assets/img/33.png" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item ">
+                                <div class="kreditOwlSlider d-flex">
+                                    <div class="col-lg-7 kreditOwlSliderText ">
+                                        <div class="container">
+                                            <h4>RabitaBot</h4>
+                                            <p>Azərbaycanın ilk maliyyə çatbotu!</p>
+                                    
+                                            <div class="kreditSlideButton mt-5">
+                                                <a href="#">Daha ətraflı</a>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    <div class="col-lg-5 kreditOwlSliderImg  d-flex justify-content-end">
+                                        <img src="./assets/img/slide2.png" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="carousel-item ">
+                                <div class="kreditOwlSlider d-flex">
+                                    <div class="col-lg-7 kreditOwlSliderText ">
+                                        <div class="container">
+                                            <h4>İnternet Bankçılıq</h4>
+                                            <p>Hesablarınızı idarə etmək rahatdır!</p>
+                                    
+                                            <div class="kreditSlideButton mt-5">
+                                                <a href="#">Daha ətraflı</a>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    <div class="col-lg-5 kreditOwlSliderImg  d-flex justify-content-end">
+                                        <img src="./assets/img/slide3.png" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="topFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <img src="./assets/img/logo.svg" width="168px">
+                        <img src="./assets/img/133_footer.png" style="width:76px; height: 36px;">
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </main>
+
+    <footer class=" text-lg-start ">
+
+  
+        <section>
+          <div class="container  text-md-start mt-5">
+            <div class="row mt-3">
+    
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold  mb-2">
+                  Fərdi müştərilər
+                </h6>
+  
+                <ul>
+                  <li><a href="#">Əmanətlər</a></li>
+                  <li><a href="#">Kreditlər</a></li>
+                  <li><a href="#">Kartmane</a></li>
+                  <li><a href="#">Onlayn xidmətlər</a></li>
+                  <li><a href="#">Pul köçürmələri</a></li>
+                  <li><a href="#">Kampaniyalar</a></li>
+                  <li><a href="#">Xidmət şəbəkəsi</a></li>
+                  <li><a href="#">Saxlanc seyfləri</a></li>
+  
+                </ul>
+  
+              </div>
+  
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold  mb-2">
+                  Biznes müştərilər
+                </h6>
+  
+                <ul>
+                  <li><a href="#">Əmanətlər</a></li>
+                  <li><a href="#">Kreditlər</a></li>
+                  <li><a href="#">Plastik Kartlar</a></li>
+                  <li><a href="#">Bank xidmətləri </a></li>
+                  <li><a href="#">Xidmət şəbəkəsi</a></li>
+                  <li><a href="#">Kampaniyalar</a></li>
+  
+  
+                </ul>
+  
+              </div>
+  
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold  mb-2">
+                  Bank haqqında
+                </h6>
+  
+                <ul>
+                  <li><a href="#">Ümumi məlumat</a></li>
+                  <li><a href="#">Bankın tarixi</a></li>
+                  <li><a href="#">Rəhbərlik</a></li>
+                  <li><a href="#">Təşkilatı Struktur </a></li>
+                  <li><a href="#">Banklararası biznes</a></li>
+                  <li><a href="#">Partnyorlarımız</a></li>
+                  <li><a href="#">Xəbərlər və Elanlar</a></li>
+                  <li><a href="#">Tender elanları</a></li>
+                  <li><a href="#">İstehlakçıların müraciəti</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Təhlükəsizlik </a></li>
+  
+                </ul>
+  
+              </div>
+  
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold  mb-2">
+                  İnsan resursları
+                </h6>
+  
+                <ul>
+                  <li><a href="#">Dəyərlərimiz</a></li>
+                  <li><a href="#">Mükafatlandırma siyasəti</a></li>
+                  <li><a href="#">Vakansiyalar</a></li>
+                  <li><a href="#">Şikayət və təkliflər</a></li>
+  
+  
+                </ul>
+  
+              </div>
+              
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold  mb-2">
+                  İnvestorlarla əlaqə
+                </h6>
+  
+                <ul>
+                  <li><a href="#">Risklərin idarə edilməsi</a></li>
+                  <li><a href="#">Çirkli pulların yuyulmasına qarşı fəaliyyət</a></li>
+                  <li><a href="#">Hesabatlar</a></li>
+                  <li><a href="#">Yükləmələr və dəstək </a></li>
+  
+  
+                </ul>
+  
+              </div>
+              
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="fw-bold  mb-2" id="lastH">
+                  Baş Ofis
+                </h6>
+  
+                <ul>
+                  <li><a href="#">Azərbaycan, Bakı şəh., AZ 1010, 28 May küç. 33</a></li>
+                  <li><a href="#">Tel.: (994 12) 598 44 88</a></li>
+                  <li><a href="#">Faks: (994 12) 497 11 01</a></li>
+                  <li><a href="#">Teleks: 142453 RSKBAI</a></li>
+                  <li><a href="#">133@rabitabank.com</a></li>
+  
+  
+                </ul>
+  
+              </div>
+  
+              
+    
+  
+    
+            </div>
+  
+            <div class="row" id="footerImg">
+              <div class="col-lg-12 d-flex justify-content-end">
+                <img src="./assets/img/infobank-v-2@2x.png" style="width:120px; height: 60px; object-fit: contain;">
+                <img class="ms-5" src="./assets/img/msp.png" style="width:120px; height: 60px; object-fit: contain;">
+              </div>
+            </div>
+  
+            <div class="row" id="socialMediaIconFooter">
+              <div class="col-lg-12 d-flex ">
+                <div class="col-lg-6">
+                  <p>Rabitəbank ASC Azərbaycan Mərkəzi Bankın 136 saylı lisenziyası <br> əsasında fəaliyyət göstərir. © Rabitəbank 2022</p>
+                </div>
+  
+                <div class="col-lg-6 d-flex justify-content-end">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+  
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+  
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+  
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+  
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+  
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      </footer>
+
+    <script>
+        function openSupporters(evt,supportersName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(supportersName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+
+var acc = document.getElementsByClassName("accordion");
+var j;
+
+for (j = 0; j < acc.length; j++) {
+  acc[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+      </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

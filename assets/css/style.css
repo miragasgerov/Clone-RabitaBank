@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1161,6 +1162,8 @@ header .bottomNav ul li a:hover {
   color: white;
 }
 .campaignsTabCard .tab button {
+  position: relative;
+  margin-top: 50px;
   width: max-content;
   margin-right: 20px;
   background-color: transparent;
@@ -1260,4 +1263,327 @@ header .bottomNav ul li a:hover {
   letter-spacing: -0.4px;
   color: #2e384d;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .tab button:nth-child(4) {
+    display: none;
+  }
+  .tab button:nth-child(5) {
+    display: none;
+  }
+  .tab button:nth-child(6) {
+    display: none;
+  }
+  .tab button:nth-child(7) {
+    display: none;
+  }
+  .tab button:nth-child(8) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .tab button:nth-child(4) {
+    display: none;
+  }
+  .tab button:nth-child(5) {
+    display: none;
+  }
+  .tab button:nth-child(6) {
+    display: none;
+  }
+  .tab button:nth-child(7) {
+    display: none;
+  }
+  .tab button:nth-child(8) {
+    display: none;
+  }
+}
+.serviceNetwork {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.serviceNetwork .tab {
+  margin-top: 2rem;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.serviceNetwork .tab ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.serviceNetwork .tab ul li {
+  margin-right: 20px;
+  position: relative;
+  transition: all 2s;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+.serviceNetwork .tab ul li:hover::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(110, 187, 32);
+}
+.serviceNetwork .tabcontent {
+  display: none;
+}
+.serviceNetwork .tabcontent .serviceTabHead h4 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #4aa949;
+  margin-right: 15px;
+}
+.serviceNetwork .tabcontent .serviceTabHead i {
+  font-size: 24px;
+  color: rgb(170, 187, 199);
+}
+.serviceNetwork .tabcontent .serviceTabBody ul {
+  padding: 0;
+  list-style-type: none;
+}
+.serviceNetwork .tabcontent .serviceTabBody ul li {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #15334a;
+}
+.serviceNetwork .tabcontent .bankomatDiv {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8FAFB;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  margin-right: 20px;
+}
+.serviceNetwork .tabcontent .bankomatDiv .bankomatDivHead {
+  display: flex;
+}
+.serviceNetwork .tabcontent .bankomatDiv .bankomatDivHead h4 {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #4aa949;
+  margin-right: 15px;
+}
+.serviceNetwork .tabcontent .bankomatDiv .bankomatDivHead i {
+  color: #AABBC7;
+  font-size: 26px;
+}
+.serviceNetwork .tabcontent .bankomatDiv .bankomatDivHead p {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #15334a;
+}
+
+@media only screen and (max-width: 992px) {
+  .FiliallarDiv:nth-child(2) {
+    margin-top: 30px !important;
+  }
+
+  .FiliallarDiv:nth-child(3) {
+    margin-top: 30px !important;
+  }
+}
+header .search-box {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-68%, -50%);
+  background: rgb(220, 220, 220);
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+header .search-btn {
+  margin-top: -5px;
+  color: black;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+header .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px 0px 5px 0px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+header .search-box:hover > .search-txt {
+  width: 200px;
+  padding: 0 6px;
+}
+header .search-box:hover > .search-btn {
+  background: white;
+}
+
+.supportersTab .active {
+  background-color: #6ebb20;
+  color: #fff !important;
+  border-color: #6ebb20;
+}
+.supportersTab h1 {
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: #2e384d;
+  margin-bottom: 30px;
+}
+.supportersTab .tab ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+.supportersTab .tab ul li {
+  padding: 8px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #708390;
+  border-radius: 16px;
+  border: solid 1px #e6ebed;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 40px;
+}
+.supportersTab .tab ul li:hover {
+  background-color: #6ebb20;
+  color: #fff !important;
+  border-color: #6ebb20;
+}
+.supportersTab .tabcontent {
+  position: relative;
+  top: 100px;
+}
+.supportersTab .tabcontent .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: relative;
+}
+.supportersTab .tabcontent .active, .supportersTab .tabcontent .accordion:hover {
+  background-color: #ccc;
+}
+.supportersTab .tabcontent .accordion:after {
+  content: "+";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.supportersTab .tabcontent .active:after {
+  content: "−";
+}
+.supportersTab .tabcontent .panel {
+  padding: 0px 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.supportersTab .tabcontent .panel .accordionCard {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.supportersTab .tabcontent .panel .accordionCard .accordionCardText h3 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #4aa949;
+  margin-top: 20px;
+}
+.supportersTab .tabcontent .panel .accordionCard .accordionCardText p {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #15334a;
+}
+
+@media only screen and (max-width: 992px) {
+  .tab ul li:nth-child(5) {
+    display: none;
+  }
+  .tab ul li:nth-child(6) {
+    display: none;
+  }
+  .tab ul li:nth-child(7) {
+    display: none;
+  }
+  .tab ul li:nth-child(8) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .tab ul li:nth-child(4) {
+    display: none;
+  }
+  .tab ul li:nth-child(5) {
+    display: none;
+  }
+  .tab ul li:nth-child(6) {
+    display: none;
+  }
+  .tab ul li:nth-child(7) {
+    display: none;
+  }
+  .tab ul li:nth-child(8) {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

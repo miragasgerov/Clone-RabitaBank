@@ -128,114 +128,6 @@
             
         </section>
 
-        <section class="emanetlerCard">
-            <div class="container">
-                <div class="row">
-                     <div class="emanetlerCardCommon  col-lg-12">
-                        <div class="col-lg-4 col-md-4 col-sm-8 emanetlerCardCommonImg">
-                            <div class="container">  
-                              <img src="./assets/img/universal amanat kampaniya.png" class="img-fluid">
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-8 col-md-8 col-sm-4 emanetlerCardTextTop">
-                            <div class="container">
-                                <h3>Universal Əmanət</h3>
-
-                                <div class="bottomEmanetlerCardText mt-3">
-                                    <ul>
-                                        <li>
-                                            <p>Müddət: <br><strong>36 ayadək</strong></p>
-                                        </li>
-                                        <li>
-                                            <p>Faiz dərəcəsi: <br><strong>10.50 %-dək</strong></p>
-                                        </li>
-                                    </ul>
-                                    <hr style="color:#cdcdcd;">
-
-                                    <div class="bottomEmanetlerCardButton mt-5">
-                                        <a href="#">Daha ətraflı</a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            
-                       </div>
-                    </div>
-
-                    <div class="emanetlerCardCommon col-lg-12 mt-5">
-                        <div class="col-lg-4 col-md-6 col-sm-8 emanetlerCardCommonImg">
-                            <div class="container">  
-                              <img src="./assets/img/Ushaq2.png" class="img-fluid">
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-8 col-md-6 col-sm-4 emanetlerCardTextTop">
-                            <div class="container">
-                                <h3>Uşaq yığım əmanəti</h3>
-
-                                <div class="bottomEmanetlerCardText mt-3">
-                                    <ul>
-                                        <li>
-                                            <p>Müddət: <br><strong>216 ayadək</strong></p>
-                                        </li>
-                                        <li>
-                                            <p>Faiz dərəcəsi: <br><strong>5 %-dək</strong></p>
-                                        </li>
-                                    </ul>
-                                    <hr style="color:#cdcdcd;">
-
-                                    <div class="bottomEmanetlerCardButton mt-5">
-                                        <a href="#">Daha ətraflı</a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            
-                       </div>
-                    </div>
-
-                    <div class="emanetlerCardCommon col-lg-12 mt-5">
-                        <div class="col-lg-4 col-md-6 col-sm-8 emanetlerCardCommonImg">
-                            <div class="container">  
-                              <img src="./assets/img/Depoztariy.png" class="img-fluid">
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-8 col-md-6 col-sm-4 emanetlerCardTextTop">
-                            <div class="container">
-                                <h3>Uşaq yığım əmanəti</h3>
-
-                                <div class="bottomEmanetlerCardText mt-3">
-                                    <ul>
-                                        <li>
-                                            <p>Müddət: <br><strong>216 ayadək</strong></p>
-                                        </li>
-                                        <li>
-                                            <p>Faiz dərəcəsi: <br><strong>5 %-dək</strong></p>
-                                        </li>
-                                    </ul>
-                                    <hr style="color:#cdcdcd;">
-
-                                    <div class="bottomEmanetlerCardButton mt-5">
-                                        <a href="#">Daha ətraflı</a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            
-                       </div>
-                    </div> 
-
-
-
-
-                </div>
-            </div>
-        </section>
 
         <section class="onlineOrder">
             <div class="container">
@@ -244,25 +136,45 @@
                         <h3>Onlayn sifariş</h3>
 
                         <form class="row g-3 mt-5 justify-content-between">
-                            <div class="col-md-5">
-                              <input type="text" class="form-control" placeholder="Adiniz" aria-label="First name">
-                            </div>
 
                             <div class="col-md-5">
-                                <input type="text" class="form-control" placeholder="Soyadiniz" aria-label="First name">
+                                <select id="inputState" class="form-select filial">
+                                  <option selected>Əmanət növünü seçin</option>
+                                  <option>Universal Əmanət</option>
+                                  <option>Uşaq yığım əmanəti</option>
+                                  <option>Saxlanc seyfləri</option>
+  
+                                </select>
                               </div>
+
+
+                            <!-- <div class="col-md-5">
+                              <input type="text" class="form-control" placeholder="Adiniz" aria-label="First name">
+                            </div> -->
 
                               
 
                             <div class="col-md-5">
-                              <select id="inputState" class="form-select">
+                              <select id="inputState" class="form-select serviceType">
                                 <option selected>Əmanət növünü seçin</option>
-                                <option>Universal Əmanət</option>
+                                <option >Universal Əmanət</option>
                                 <option>Uşaq yığım əmanəti</option>
                                 <option>Saxlanc seyfləri</option>
 
                               </select>
                             </div>
+
+
+                            
+                            <div class="col-md-5 d-flex">
+                                <div class="col-md-5">
+                                    <input type="date" class="form-control item dateInput" >
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="time" class="form-control item clockInput" id="appt" name="appt" >
+                                </div>
+                            </div>
+
 
                             <div class="col-md-5">
                                 <input type="number" class="form-control item" id="phone-number" placeholder="Mobil Nomre">
@@ -283,79 +195,7 @@
             </div>
         </section>
 
-        <section class="kreditSlide">
-          <div class="container">
-              <div class="row">
-                  <div class="kreditSlideSec">
-                      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                          <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          </div>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <div class="kreditOwlSlider d-flex">
-                                  <div class="col-lg-7 kreditOwlSliderText ">
-                                      <div class="container">
-                                          <h4>Rabita Mobile</h4>
-                                          <p>Rabita Mobile ilə banka getməyə ehtiyac yoxdur, bankınız hər zaman yanınızdadır!</p>
-                                  
-                                          <div class="kreditSlideButton mt-5">
-                                              <a href="#">Daha ətraflı</a>
-                                          </div>
-                                      </div>
-      
-                                  </div>
-                                  <div class="col-lg-5 kreditOwlSliderImg d-flex justify-content-end">
-                                      <img src="./assets/img/33.png" class="img-fluid" alt="...">
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="carousel-item ">
-                              <div class="kreditOwlSlider d-flex">
-                                  <div class="col-lg-7 kreditOwlSliderText ">
-                                      <div class="container">
-                                          <h4>RabitaBot</h4>
-                                          <p>Azərbaycanın ilk maliyyə çatbotu!</p>
-                                  
-                                          <div class="kreditSlideButton mt-5">
-                                              <a href="#">Daha ətraflı</a>
-                                          </div>
-                                      </div>
-      
-                                  </div>
-                                  <div class="col-lg-5 kreditOwlSliderImg  d-flex justify-content-end">
-                                      <img src="./assets/img/slide2.png" class="img-fluid" alt="...">
-                                  </div>
-                              </div>
-                            </div>
 
-                            <div class="carousel-item ">
-                              <div class="kreditOwlSlider d-flex">
-                                  <div class="col-lg-7 kreditOwlSliderText ">
-                                      <div class="container">
-                                          <h4>İnternet Bankçılıq</h4>
-                                          <p>Hesablarınızı idarə etmək rahatdır!</p>
-                                  
-                                          <div class="kreditSlideButton mt-5">
-                                              <a href="#">Daha ətraflı</a>
-                                          </div>
-                                      </div>
-      
-                                  </div>
-                                  <div class="col-lg-5 kreditOwlSliderImg  d-flex justify-content-end">
-                                      <img src="./assets/img/slide3.png" class="img-fluid" alt="...">
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-
-              </div>
-          </div>
-      </section>
 
 
 
@@ -537,7 +377,46 @@
         </section>
       
       </footer>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+
+      <script>
+
+
+        const filial = document.querySelector(".filial");
+        const serviceType = document.querySelector(".serviceType");
+        const dateInput = document.querySelector(".dateInput"); 
+        const clockInput = document.querySelector(".clockInput");
+
+         serviceType.disabled = true;
+         dateInput.disabled = true;
+         clockInput.disabled = true;
+
+        // filial.addEventListener("keyup", () => {
+        //     if(filial.value.length == 1) {
+        //         serviceType.disabled = false;
+        //     }
+        //     else{
+        //         button.disabled = true;
+        //     }
+        // } );
+
+        $(function () {
+    $('.filial').on('change', function () {
+        let val = $('.filial').val();
+        console.log(val);
+        if (val == 0) {
+            $('.serviceType').prop('disabled', true);
+        } else {
+            $('.serviceType').prop('disabled', false);
+        }
+    })
+})
+
+      </script>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

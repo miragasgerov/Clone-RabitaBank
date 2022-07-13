@@ -6,10 +6,11 @@
         overflow: hidden;
         .active{
             background-color: rgb(110,187,32);
-            color: white;
-    
+            color: white;  
         }
         button{
+            position: relative;
+            margin-top: 50px;
             width: max-content;
             margin-right: 20px;
             &:nth-child(1){
@@ -130,4 +131,62 @@
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .tab{
+        button{
+            &:nth-child(4){
+                display: none;
+            }
+            &:nth-child(5){
+                display: none;
+            }
+
+            &:nth-child(6){
+                display: none;
+            }
+
+            &:nth-child(7){
+                display: none;
+            }
+
+            &:nth-child(8){
+                display: none;
+            }
+        }
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+    .tab{
+            button{
+                &:nth-child(4){
+                    display: none;
+                }
+                &:nth-child(5){
+                    display: none;
+                }
+
+                &:nth-child(6){
+                    display: none;
+                }
+
+                &:nth-child(7){
+                    display: none;
+                }
+                &:nth-child(8){
+                    display: none;
+                }
+
+
+
+
+
+            }
+    }
+
+
 }
