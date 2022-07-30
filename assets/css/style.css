@@ -105,30 +105,25 @@ header .bottomNav ul li a:hover {
   header {
     position: relative;
   }
-
   nav i {
     position: absolute;
     right: 120px;
   }
-
   .leftMenu {
     position: absolute;
     top: 120px;
     left: 30px;
   }
-
   #bottomMenu {
     position: absolute;
     top: 100px;
     left: 65px;
   }
-
   button {
     position: absolute;
     top: -50px;
     right: 10px;
   }
-
   .rightMenu {
     position: absolute;
     top: 80px;
@@ -481,6 +476,103 @@ footer ul li a:hover {
   color: #15334a !important;
 }
 
+.priceCalculate {
+  background-color: #F8FAFB;
+}
+.priceCalculate .filterPriceBtn button {
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+  box-shadow: 0 4px 16px 0 rgba(191, 197, 210, 0.5);
+  background-color: #6ebb20;
+  box-shadow: none;
+  margin-left: 25px;
+}
+.priceCalculate .filterPriceBtn button:hover {
+  background-color: #2E384D;
+}
+.priceCalculate h3 {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #2e384d;
+}
+.priceCalculate .inputs span {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.38px;
+  color: #979ca8;
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+.priceCalculate .inputs input {
+  height: 70px !important;
+}
+.priceCalculate .inputs .filterPriceInputs {
+  position: relative;
+}
+.priceCalculate .inputs .filterPriceInputs input[type=range] {
+  width: 285px;
+  height: 8px !important;
+  position: absolute;
+  top: 85px;
+  -webkit-appearance: none;
+  background: white;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.priceCalculate .inputs .filterPriceInputs input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #6ebb20;
+  cursor: pointer;
+  border: 4px solid white;
+  box-shadow: -292px 0 0 290px #6ebb20;
+}
+
+.liveCurrencyTable {
+  background-color: #F8FAFB;
+  padding: 20px;
+}
+.liveCurrencyTable .priceHead p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #708390;
+}
+.liveCurrencyTable .coinPrice h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.83;
+  color: #2e384d;
+}
+.liveCurrencyTable .coinPrice p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #2e384d;
+  line-height: 1.83;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -587,30 +679,25 @@ header .bottomNav ul li a:hover {
   header {
     position: relative;
   }
-
   nav i {
     position: absolute;
     right: 120px;
   }
-
   .leftMenu {
     position: absolute;
     top: 120px;
     left: 30px;
   }
-
   #bottomMenu {
     position: absolute;
     top: 100px;
     left: 65px;
   }
-
   button {
     position: absolute;
     top: -50px;
     right: 10px;
   }
-
   .rightMenu {
     position: absolute;
     top: 80px;
@@ -1405,7 +1492,6 @@ header .bottomNav ul li a:hover {
   .FiliallarDiv:nth-child(2) {
     margin-top: 30px !important;
   }
-
   .FiliallarDiv:nth-child(3) {
     margin-top: 30px !important;
   }
@@ -1586,4 +1672,92 @@ header .search-box:hover > .search-btn {
   .tab ul li:nth-child(8) {
     display: none;
   }
+}
+.onlineOrder .onlaynModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.onlineOrder .onlaynModal .onlaynModal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 75%;
+  border-radius: 0.5rem;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalRight {
+  background: #6ebb20;
+  border-top-left-radius: 95px;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalRight .onlaynModalRightImg img {
+  max-height: 320px;
+  width: 150px;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalRight .onlaynModalRightText {
+  padding-top: 80px;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalRight .onlaynModalRightText h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: white;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalRight .onlaynModalRightText p {
+  font-size: 17px;
+  line-height: 1.3;
+  color: white;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalLeft .onlaynModalText {
+  max-width: 25rem;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalLeft .onlaynModalText h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #0C9B53;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .onlaynModalLeft .onlaynModalText p {
+  font-size: 17px;
+  color: #0C9B53;
+  line-height: 1.3;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .close-btn {
+  float: right;
+  width: 1.5rem;
+  border-radius: 0.25rem;
+  color: white;
+  text-transform: uppercase;
+  background-color: #548820;
+  text-align: center;
+  cursor: pointer;
+}
+.onlineOrder .onlaynModal .onlaynModal-content .close-btn:hover {
+  background-color: white;
+  color: black;
+}
+.onlineOrder .show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.tabcontent ul {
+  list-style-type: none;
+}
+.tabcontent ul li {
+  margin-top: 3rem;
+}
+.tabcontent ul li a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

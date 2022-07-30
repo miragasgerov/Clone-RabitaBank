@@ -137,7 +137,7 @@
 
                         <form class="row g-3 mt-5 justify-content-between">
 
-                            <div class="col-md-5">
+                            <div class="col-md-5 d-flex">
                                 <select id="inputState" class="form-select filial">
                                   <option selected>Əmanət növünü seçin</option>
                                   <option>Universal Əmanət</option>
@@ -145,6 +145,8 @@
                                   <option>Saxlanc seyfləri</option>
   
                                 </select>
+
+                                <input class="ms-3" type="checkbox" id="chkddl" onclick="Enableddl(this)"/>
                               </div>
 
 
@@ -154,39 +156,76 @@
 
                               
 
-                            <div class="col-md-5">
-                              <select id="inputState" class="form-select serviceType">
-                                <option selected>Əmanət növünü seçin</option>
+                            <div class="col-md-5 d-flex">
+                              <select id="ddl" disabled="disabled" class="form-select serviceType">
+                                <option value="" selected disabled>Əmanət növünü seçin</option>
                                 <option >Universal Əmanət</option>
                                 <option>Uşaq yığım əmanəti</option>
                                 <option>Saxlanc seyfləri</option>
 
                               </select>
+                              <input class="ms-3" type="checkbox" id="chkdtdl" onclick="Enabledtll(this)"/>
+
                             </div>
 
 
                             
                             <div class="col-md-5 d-flex">
                                 <div class="col-md-5">
-                                    <input type="date" class="form-control item dateInput" >
+                                    <input  id="dtll" disabled="disabled" type="date" class="form-control item dateInput" >
                                 </div>
                                 <div class="col-md-7">
-                                    <input type="time" class="form-control item clockInput" id="appt" name="appt" >
+                                    <input  id="dtlls" disabled="disabled" type="time" class="form-control item clockInput"  >
                                 </div>
                             </div>
 
 
                             <div class="col-md-5">
-                                <input type="number" class="form-control item" id="phone-number" placeholder="Mobil Nomre">
+                                <input type="number" class="form-control item" id="phone-number" placeholder="Mobil Nomre" >
                             </div>
 
                             <div class="buttonOrderOnline col-md-5 ms-auto">
-                                <button type="submit" class="btn btn-primary col-12" style="position:relative;">Davam et →</button>
-                                
+                                <button type="submit"  class="btn btn-primary col-12" id="davamBtn" style="position:relative;">Davam et →</button>
+                            </div>
+                            
+                            <div class="onlaynModal">
+                              <div class="onlaynModal-content">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-6 p-5 onlaynModalLeft">
+                                      <img src="./assets/img/logo.svg">
+
+                                      <div class="onlaynModalText ps-5 pt-5">
+                                        <h3>Təşəkkür edirik!</h3>
+                                        <p>Zəhmət olmasa sıra növbəsini aldığınız saatdan ən az 10 dəqiqə əvvəl filiala yaxınlaşaraq Qmatic-dən növbənizi götürün. </p>
+                                      </div>
+
+                                      <img src="./assets/img/133_footer.png" width="80px" class="pt-5">
+                                    </div>
+    
+                                    <div class="col-lg-6 p-5 onlaynModalRight">
+                                      <span class="close-btn">x</span>
+
+                                      <div class="container">
+                                        <div class="row">
+                                          <div class="col-lg-6 onlaynModalRightText">
+                                            <h3>Rabita Mobile</h3>
+                                            <p>Rabita Mobile ilə banka getməyə ehtiyac yoxdur, bankınız hər zaman yanınızdadır</p>
+
+                                          </div>
+
+                                          <div class="col-lg-6 onlaynModalRightImg">
+                                            <img src="./assets/img/modalImg.png">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
 
 
-                       
                         </form> 
 
 
@@ -379,41 +418,8 @@
       </footer>
 
 
-
-      <script>
-
-
-        const filial = document.querySelector(".filial");
-        const serviceType = document.querySelector(".serviceType");
-        const dateInput = document.querySelector(".dateInput"); 
-        const clockInput = document.querySelector(".clockInput");
-
-         serviceType.disabled = true;
-         dateInput.disabled = true;
-         clockInput.disabled = true;
-
-        // filial.addEventListener("keyup", () => {
-        //     if(filial.value.length == 1) {
-        //         serviceType.disabled = false;
-        //     }
-        //     else{
-        //         button.disabled = true;
-        //     }
-        // } );
-
-        $(function () {
-    $('.filial').on('change', function () {
-        let val = $('.filial').val();
-        console.log(val);
-        if (val == 0) {
-            $('.serviceType').prop('disabled', true);
-        } else {
-            $('.serviceType').prop('disabled', false);
-        }
-    })
-})
-
-      </script>
+      <script src="./assets/js/onlineNovbe.js"></script>
+      <script src="./assets/js/formModal.js"></script>
 
 
 
