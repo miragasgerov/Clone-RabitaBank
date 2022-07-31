@@ -138,33 +138,28 @@
                         <form class="row g-3 mt-5 justify-content-between">
 
                             <div class="col-md-5 d-flex">
-                                <select id="inputState" class="form-select filial">
+                                <select id="inputState" class="form-select filial" onchange="offdis()">
                                   <option selected>Əmanət növünü seçin</option>
                                   <option>Universal Əmanət</option>
                                   <option>Uşaq yığım əmanəti</option>
                                   <option>Saxlanc seyfləri</option>
   
                                 </select>
-
-                                <input class="ms-3" type="checkbox" id="chkddl" onclick="Enableddl(this)"/>
                               </div>
 
 
-                            <!-- <div class="col-md-5">
-                              <input type="text" class="form-control" placeholder="Adiniz" aria-label="First name">
-                            </div> -->
+
 
                               
 
                             <div class="col-md-5 d-flex">
-                              <select id="ddl" disabled="disabled" class="form-select serviceType">
+                              <select id="ddl" disabled="disabled" class="form-select serviceType" onchange="ondate()">
                                 <option value="" selected disabled>Əmanət növünü seçin</option>
                                 <option >Universal Əmanət</option>
                                 <option>Uşaq yığım əmanəti</option>
                                 <option>Saxlanc seyfləri</option>
 
                               </select>
-                              <input class="ms-3" type="checkbox" id="chkdtdl" onclick="Enabledtll(this)"/>
 
                             </div>
 

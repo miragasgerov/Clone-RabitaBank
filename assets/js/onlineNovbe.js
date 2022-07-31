@@ -1,30 +1,10 @@
-function Enableddl(chkddl) {
-    var ddl = document.getElementById("ddl");
+function offdis() {
+    document.getElementById('ddl').disabled = false;
 
-    ddl.disabled=chkddl.checked ? false : true;
+  }
 
-    if(!ddl.disabled) {
-        ddl.focus();
-    }
-}
+  function ondate(){
+    document.getElementById('dtll').disabled = false;
+    document.getElementById('dtlls').disabled = false;
 
-
-function Enabledtll(chkdtdl) {
-    var dtll = document.getElementById("dtll");
-    var dtlls = document.getElementById("dtlls");
-
-    dtll.disabled=chkdtdl.checked ? false : true;
-
-    if(!dtll.disabled) {
-        dtll.focus();
-    }
-
-    dtlls.disabled=chkdtdl.checked ? false : true;
-
-    if(!dtlls.disabled) {
-        dtlls.focus();
-    }
-}
-
-
-
+  }
