@@ -4,9 +4,7 @@ var davamBtn = document.getElementById("davamBtn");
 var closeBtn = document.querySelector(".close-btn");
 var loadingModal = document.querySelector(".loadingModal")
 
-// function toggleModal() {
-//     onlaynModal.classList.toggle("show-modal");
-// }
+
 
 
 
