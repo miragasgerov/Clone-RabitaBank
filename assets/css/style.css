@@ -1673,7 +1673,48 @@ header .search-box:hover > .search-btn {
     display: none;
   }
 }
+.onlineOrder .loadingModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.onlineOrder .loadingModal .loadingModalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 75%;
+  border-radius: 0.5rem;
+}
+.onlineOrder .loadingModal .loadingModalContent .loadingModalContentHeader {
+  background-color: rgb(213, 213, 213);
+}
+.onlineOrder .loadingModal .loadingModalContent .loadingModalContentHeader h3 {
+  padding: 20px;
+}
+.onlineOrder .loadingModal .loadingModalContent .loadingModalContentBody .loader {
+  height: 50px;
+  width: 50px;
+  border: 10px solid #EDEDED;
+  border-top-color: #6EBB20;
+  border-radius: 50%;
+  animation: spin 1.5s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .onlineOrder .onlaynModal {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
